@@ -1,6 +1,6 @@
 package com.pizzas.model;
 
-public enum MesureUnit {
+public enum MeasurementUnit {
 
     KILOS, LITROS
     
