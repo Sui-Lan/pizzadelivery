@@ -20,6 +20,6 @@ public class IngredientVO {
 
     private String message;
     private String code;
-    private List<Ingredient> IngredientList;
+    private List<Ingredient> IngredientListVO;
     
 }
