@@ -12,6 +12,6 @@ import com.pizzas.vo.IngredientVO;
 @Repository
 public interface IIngredientRepository extends JpaRepository<Ingredient, Integer> {
 
-    @Query(value="SELECT * FROM ingredient WHERE name = ?1", nativeQuery=true)
+    @Query(value="SELECT * FROM ingredient WHERE name_ingredient = ?1", nativeQuery=true)
     public List<Ingredient> findByName(String name);
 }
