@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.pizzas.model.Address;
 
 @Repository
-public interface IAdressRepository extends JpaRepository<Address, Integer>{
+public interface IAddressRepository extends JpaRepository<Address, Integer>{
     
 }
