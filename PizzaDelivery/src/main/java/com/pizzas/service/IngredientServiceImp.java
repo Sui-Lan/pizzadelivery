@@ -89,10 +89,10 @@ public class IngredientServiceImp implements IIngredientService {
     @Override
     public IngredientVO update(Ingredient ingredient) {
 	List<Ingredient> ingredientsList = new ArrayList<Ingredient>();
-	ingredientVO = new IngredientVO("Ups error!. The ingredient has not been saved correctly", "100", ingredientsList);
+	ingredientVO = new IngredientVO("Ups error!. The ingredient has not been updated correctly", "100", ingredientsList);
 	try {
 		iIngredientRepository.save(ingredient);
-		ingredientVO.setMessage(String.format("The ingredient %s has been saved correctly", ingredient.getNameIngredient()));
+		ingredientVO.setMessage(String.format("The ingredient %s has been updated correctly", ingredient.getNameIngredient()));
 		ingredientVO.setCode("0");
 	} catch (Exception e) {
 	    logger.trace("Try catch Error: Ingredient name not updated!", e);
@@ -105,7 +105,6 @@ public class IngredientServiceImp implements IIngredientService {
 	List<Ingredient> ingredientsList = new ArrayList<Ingredient>();
 	ingredientVO = new IngredientVO("Please try again, ingredient has not been deleted.", "100", ingredientsList);
 	try {
-	    	
 		iIngredientRepository.delete(ingredient);
 		ingredientVO.setMessage("The ingredient has been deleted successfully.");
 		ingredientVO.setCode("0");
@@ -116,3 +115,4 @@ public class IngredientServiceImp implements IIngredientService {
     }
 
 }
+

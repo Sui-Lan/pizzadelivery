@@ -1,6 +1,5 @@
 package com.pizzas.vo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.pizzas.model.Ingredient;
@@ -20,6 +19,6 @@ public class IngredientVO {
 
     private String message;
     private String code;
-    private List<Ingredient> IngredientListVO;
+    private List<Ingredient> ingredientListVO;
     
 }
